@@ -14,6 +14,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;  
     background-size: cover;
+    color: rgb(27, 27, 27);
 }
   
   * {
@@ -23,9 +24,10 @@ body {
   footer {
     text-align: center;
     margin: 20%;
-    background-color: #2196F3;
+    background-color: #0b7dda;
     padding: 1px;
     color: white;
+    border-radius: 25px;
 }
   
   form.bar input[type=text] {
@@ -47,6 +49,23 @@ body {
     border: 1px solid grey;
     border-left: none;
     cursor: pointer;
+}
+
+button {
+    float: center;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+button:hover {
+  background: #0b7dda;
 }
   
   form.bar button:hover {
