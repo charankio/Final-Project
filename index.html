@@ -1,41 +1,81 @@
 <!DOCTYPE html>
     <html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="script.js"></script>
     <head>
-
-        <meta charset="UTF-8">
-        <title>ITSC 3155 051 - Project</title>
-        <link rel="stylesheet" href="myStyle.css">
-
+      <meta charset="UTF-8">
+      <title>ITSC 3155 051 - Project</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Orelega+One&display=swap" rel="stylesheet">
     </head>
+
+    <nav style="margin-top: 2%" class="center">
+        <ul>
+            
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="world.html">World</a></li>
+            <li><a href="arts.html">Arts</a></li>
+            <li><a href="us.html">U.S.</a></li>
+            <li><a href="science.html">Science</a></li>
+        </ul>
+    </nav>
 
     <body>
         <div class="center">
-            <h1>New York Times Best Seller</h1>
-            <h2>Book Review Finder</h2>          
-        </div>
-
-        <div class="search">
-            <h2>Search for a book review</h2>
-            <form class="bar">
-                <input type="text" placeholder="Type book title or author" name="search">
-                <button type="submit" onclick="test()">Search</button>
-            </form>
-        </div>
-
-        <div class="center">
-            <h2>T0p 10 NYT Best Seller Books</h2>
-                <button  type="submit" onclick="test()">Top 10 Books</button>
-        </div>
+            <img id='logo' src="images/nytlogo.png" alt="New York Times Logo" height="30">
+            <h1>New York Times</h1>
+            
+         </div>              
         
-        <script src="app.js"> </script>
+        <!-- SEARCH BOX -->
+        <div class="center">
+            <h2>Search for article</h2>
+            <div class="search" >
+                <form class="bar">            
+                    <input type="text" placeholder="Type article to search" id="title">               
+                    <button type="submit" onclick="execute()">Search</button>
+                </form>
+            </div>
+        </div>
+
+        
+       
+        <!-- NOT SURE IF WE NEED HEADLINES DIV AS NAV IS TAKING CARE OF THIS
+            LETS DISCUSS IN PRESENTATION
+        <div class="center" style="font-weight: bold;">
+            <h2>NYT Headlines</h2>
+            <p>
+                <a href="world.html">World Latest Headlines</a> 
+            </p>
+            <p>
+                <a href="science.html">Science Latest Headlines</a>
+            </p>
+            <p>
+                <a href="arts.html">Art Latest Headlines</a> 
+            </p>
+            <p>
+                <a href="us.html">U.S. Latest Headlines</a>
+            </p>
+        </div>
+    -->
+        
+        <div class="center">
+            <div style="margin-top: 2%; margin-bottom: 2%" id="articleResult">
+            </div>
+        </div>
 
     </body>
 
-    <footer>
+    <footer class="foot">
         <div>
-            <h3>Created By:</h3>        
-                    <p>Alex Raygoza | Hari Dhimal</p>
-                    <p>ITSC-3155-051 Group#9 | Fall 2021</p>
+            <p>Created By:</p>
+                <a href="https://github.com/charankio" target="_blank">Alex Raygoza</a>
+                        
+                <!--<p>Alex Raygoza | Hari Dhimal</p>-->
+                <a href="https://github.com/hdhimal2020" target="_blank">Hari Dhimal</a>
+            
+                <p>ITSC-3155-051 Group#9 | Fall 2021</p>
         </div>
     </footer>
 </html>

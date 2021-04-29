@@ -1,0 +1,127 @@
+.center {
+    text-align: center;
+  }
+
+body {
+    background-image: url("images/news.jpg");
+    font-family: 'Times New Roman', Times, serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;  
+    background-size: cover;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+nav {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+h1 {
+  font-family: 'Orelega One', cursive;
+  font-size: 46px;
+}
+
+h2 {
+  font-family: 'Orelega One', cursive;
+  font-size: 30px;
+}
+
+a {
+  display: block;
+  color: black;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+a:hover {
+  color: #2196F3;
+  font-size: 26px;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+img {
+  height: 250px;
+}
+
+#logo {
+  height: 100px;
+}
+
+p {
+  font-weight: bold;
+  font-size: 24px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+  
+
+  .foot {
+    text-align: center;
+    font-size: 8px;
+    font-family: 'Orelega One', cursive;
+    margin: 10%;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+  }
+ 
+  /* This is for the search box */
+  .search {
+    margin-left: 20%;
+    margin-right: 10%;
+    margin-top: 1%;
+}
+
+form.bar input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+
+form.bar button {
+  float: left;
+  width: 12%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.bar button:hover {
+  background: #0b7dda;
+}
+
+form.bar::after {
+  content: "";
+  clear: both;
+  display: table;
+}  
